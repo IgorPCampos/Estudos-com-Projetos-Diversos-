@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #51519A;
+}
+
+main {
+    background-color: #2A2A49;
+    width: 700px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px black;
+}
+form {
+    margin: 0px 50px;
+}
+
+.label {
+    display: flex;
+    font-size: 1.1em;
+    color: white;
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    text-indent: 4px;
+}
+
+legend {
+    color: white;
+}
+
+.white {
+    color: white;
+}

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 690px) {
+    .btn {
+       
+        width: 100px;
+        margin: 0 auto;
+    }
+    
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #cards > div {
+        width: 600px;
+    }
+
+    img {
+        width: 600px;
+    }
+
+    h2 {
+        padding: 20px 0px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header > div > p {
+        width: 94vw;
+    } 
+
+    header > div {
+        width: 700px;
+        
+    }
+
+    #introducao > div > p {
+        padding-top: 0px;
+        width: 98vw;
+    }
+    #introducao > div{
+        margin: 0 auto;
+        width: 98vw;
+        
+    }
+    #introducao {
+        width: 98vw;
+    }
+
+    img{
+        width: 210px;
+    }
+    #cards > div {
+       width: 210px;
+    }   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header > div > p {
+        width: 96vw;
+    } 
+
+    #introducao > div {
+        width: 96vw;
+       
+    }
+
+    #cards > div {
+        width: 240px;
+    }
+
+    img {
+        width: 240px;
+    }
+}
+

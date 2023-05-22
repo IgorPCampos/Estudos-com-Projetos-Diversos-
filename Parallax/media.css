@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media (max-width:676px) {
+    .sessao {
+        height: 300px;
+    }
+}
+
+
+@media (min-width:677px) and (max-width:840px) {
+    .sessao {
+        height: 260px;
+    }
+}

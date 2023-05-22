@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="post">
+            <label for="nome" class="label">Nome</label> 
+            <input type="text" class="input" id="nome" required placeholder="Insira o seu nome" >
+
+            <label for="email" class="label">Email</label>
+            <input type="email" class="input" id="email" required placeholder="Insira o seu email">
+
+            <label for="senha" class="label">Senha</label>
+            <input type="password" class="input" id="senha" required placeholder="Insira o sua senha" minlength="8" maxlength="20">
+            
+            <label for="idade" class="label">Idade</label>
+            <input type="number" class="input" id="idade" required placeholder="Insira a sua idade" min="18" max="150">
+            
+           
+            
+            <label for="profissao" class="label">Qual a situação da sua profissão/situação?</label>
+            <input type="text" class="input" id="profissão" list="listprof" required>
+            <datalist id="listprof">
+                <option value="Estudante">Estudante</option>
+                <option value="Estagiário">Estagiário</option>
+                <option value="Empregado">Empregado</option>
+                <option value="Outro">Outro</option>
+            </datalist>
+            
+            <fieldset>
+                <legend>Você recomendaria seu trabalho para alguém?</legend>
+                <input type="radio" name="recomendaria" id="sim" value="S" checked>
+                <label class="white" for="sim">Sim</label><br>
+                <input type="radio" name="recomendaria" id="Talvez" value="T" >
+                <label class="white" for="Talvez">Talvez</label><br>
+                <input type="radio" name="recomendaria" id="nao" value="N">
+                <label class="white" for="nao">Não</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais são suas habilidades?</legend>
+                <input type="checkbox" id="front"><label for="front" class="white">Front-end</label><br>
+                <input type="checkbox" id="back" ><label for="back" class="white">Back-end</label><br>
+                <input type="checkbox" id="full"><label for="full" class="white">Full stack</label><br>
+                <input type="checkbox" id="design "><label for="design" class="white">Designer</label>
+            </fieldset>
+
+            <label class="white" for="imsg">Comentário</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva um comentário"></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

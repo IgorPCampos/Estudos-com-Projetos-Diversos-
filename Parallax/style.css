@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(img/image1.jpg);
+    min-height: 753px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#head {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+h1 {
+    background-color: gray;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.sessao {
+    height: 230px;
+    text-align: center;
+    text-indent: 60px;
+    background-color: aqua;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.sessao  > h2{
+   padding: 45px 0 20px 0;
+}
+
+.txtimg {
+    color: black;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#img2 {
+    background-image: url(img/image2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 400px;
+}
+
+
+#img3 {
+    background-image: url(img/image3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 400px;
+}
+
+#img4 {
+    background-image: url(img/image4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 400px;
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body{
+    margin: 0; /*O body naturalmente tem margin predifinida*/
+    font-family: 'Noto Sans', sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+main{
+    width: 100vw; /*Ocupa 100% da viewport    largura*/
+    height: 100vh; /*Ocupa 100% da viewport   altura*/
+    background: #201b2c;
+    display: flex; /*Faz os elementos ficarem lado a lado*/
+    justify-content: center;  /*Centralizar no eixo X*/
+    align-items: center; /*Centralizar no eixo Y*/
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    flex-direction: column; /*Ao inves de colocar lado a lado colocou emcima embaixo*/
+}
+#left-login>h1{
+    font-size: 3vh;
+    color: #77ffc0;
+}
+.left-login>img{
+    width: 35vh;
+}
+#right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+#card-login{
+    width: 60%; /*Vai ocupar 60% da div da largura*/
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #00000056;
+}
+
+#card-login>h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%; 
+    display: flex;
+    flex-direction: column; /*Inverte o aling-itens com o justify-content */
+    align-items: flex-start; 
+    justify-content: center;
+    margin: 10px 0px; /*O primeiro valor se refere ao eixo Y e o segundo valor ao eixo X*/
+}
+.textfield>input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 5px 20px #00000056;
+    outline: none; /*Retira a linha que aparece quando clio no input*/
+    box-sizing: border-box; /*Não vai deixar atrevassar pra fora (Vai colocar uma divisão entre a div pai e a div filho)*/ 
+}
+.textfield>label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+.textfield>input::placeholder{
+    color: #f0ffff94;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer; /*O curso vira uma mão*/
+    box-shadow: 0px 1px 5px #00ff8052;
+}
+
+@media screen and (max-width: 950px){ /*Enquanto a tela for uma largura de 950px*/
+    .card-login{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 600px){ 
+    main{
+        flex-direction: column;
+    }
+    .left-login>h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login>img{
+        width: 50vh;
+    }
+    .card-login{
+        width: 100vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
